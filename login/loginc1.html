@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Personalization Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="login">
+    <!-- Login Section -->
+    <div class="login-container" id="login-section">
+        <h2>Sign-in with mail or phone number</h2>
+        <div class="login-buttons">
+            <button id="gmail-btn">Gmail</button>
+            <button id="phone-btn">Phone Number</button>
+        </div>
+        <div class="gmail-form form">
+            <label for="mail">Gmail:</label>
+            <input type="email" id="mail" placeholder="Enter your Gmail"><br>
+            <button class="login-buttons">Submit</button><br>
+            <label for="gmail-otp">OTP:</label>
+            <input type="number" id="gmail-otp" placeholder="Enter OTP">
+        </div>
+        <div class="phone-form form" style="display:none;">
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" placeholder="Enter your Phone Number"><br>
+            <button class="login-buttons">Submit</button><br>
+            <label for="phone-otp">OTP:</label>
+            <input type="number" id="phone-otp" placeholder="Enter OTP">
+        </div>
+        <button class="login-buttons" id="sign-in-btn">Sign In</button> <!-- New sign-in button -->
+    </div>
+
+    <!-- Personalization Pages -->
+    <div class="box" id="page1" style="display:none;">
+        <h2>Hey there!</h2>
+        <p>
+            We're happy that you've taken the first step
+            towards a healthier you. We need a few details to
+            kickstart your journey.
+        </p>
+        <h3>What is your name?</h3>
+        <input type="text" placeholder="Enter your name" title="Enter your name">
+        <button type="button" id="next1">Next ></button>
+    </div>
+
+    <div class="box" id="page2" style="display:none;">
+        <h3>Where are you from?</h3>
+        <p>This will help us personalize the app for you</p>
+        <div class="dropdown">
+            <input type="text" id="searchInput" placeholder="Search for a state...">
+            <ul id="stateList" class="dropdown-content">
+                <li>Andhra Pradesh</li>
+                <li>Arunachal Pradesh</li>
+                <li>Assam</li>
+                <li>Bihar</li>
+                <li>Chhattisgarh</li>
+                <li>Goa</li>
+                <li>Gujarat</li>
+                <li>Haryana</li>
+                <li>Himachal Pradesh</li>
+                <li>Jharkhand</li>
+                <li>Karnataka</li>
+                <li>Kerala</li>
+                <li>Madhya Pradesh</li>
+                <li>Maharashtra</li>
+                <li>Manipur</li>
+                <li>Meghalaya</li>
+                <li>Mizoram</li>
+                <li>Nagaland</li>
+                <li>Odisha</li>
+                <li>Punjab</li>
+                <li>Rajasthan</li>
+                <li>Sikkim</li>
+                <li>Tamil Nadu</li>
+                <li>Telangana</li>
+                <li>Tripura</li>
+                <li>Uttar Pradesh</li>
+                <li>Uttarakhand</li>
+                <li>West Bengal</li>
+                <li>Andaman and Nicobar Islands</li>
+                <li>Chandigarh</li>
+                <li>Dadra and Nagar Haveli and Daman and Diu</li>
+                <li>Lakshadweep</li>
+                <li>Delhi</li>
+                <li>Puducherry</li>
+            </ul>
+        </div>
+        <button type="button" id="back2">< Back </button>
+        <button type="button" id="next2">Next ></button>
+        <script src="scripts.js"></script>
+    </div>
+
+    <div class="box" id="page3" style="display:none;">
+        <h3>What's your fitness goal?</h3>
+        <button>Weight Loss</button><br>
+        <button>Weight Gain</button><br>
+        <button>Others</button><br>
+        <button type="button" id="back3">< Back </button>
+        <button type="submit" id="finish">Finish ></button>
+    </div>
+    <div class="box" id="page4" style="display:none;">
+    <form>
+        <h3>Details Form</h3>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" placeholder="enter your date of birth"><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="enter tour age"><br>
+        <label for="photo">photo</label>
+        <input type="image url" id="photo" ><br>
+        <h2>Fittness Goal</h2>
+        <label for="height">Height</label>
+        <input type="checkbox" id="height"><br>
+        <label for="weight">Weight</label>
+        <input type="checkbox" id="weight"><br>
+        <label for="language">Language:</label>
+        <input type="text" id="language" placeholder="familiar language to speak"><br>
+        <button type="button" id="back4">< Back</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

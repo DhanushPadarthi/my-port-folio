@@ -1,0 +1,110 @@
+/* General body styling */
+body.login {
+    background: linear-gradient(135deg, #73C2FB, #32CD32); /* Blue to Green */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container for the login section */
+.login-container, .box {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Titles and text */
+.login-container h2, .box h2, .box h3 {
+    color: #333;
+}
+
+/* General button styles */
+button {
+    background-color: #73C2FB; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    margin: 10px; /* Margin around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth background transition */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #2E8B57; /* Darker background on hover */
+}
+
+/* Button focus effect */
+button:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5); /* Add a shadow for accessibility */
+}
+
+/* Specific styles for Submit buttons */
+.gmail-form .login-buttons,
+.phone-form .login-buttons {
+    width: 100%; /* Full width */
+    font-weight: bold; /* Bold text */
+}
+
+/* Sign In button style */
+#sign-in-btn {
+    background-color: #00bbff; /* Orange for sign-in button */
+    width: 100%; /* Full width */
+    font-weight: bold; /* Bold text */
+}
+
+/* Input fields */
+.box input[type="text"], input[type="email"], input[type="number"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Padding inside the input */
+    margin-bottom: 20px; /* Space below the input */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative; /* Positioning for dropdown */
+    width: 100%; /* Full width */
+}
+
+#searchInput {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Padding inside the input */
+    margin-bottom: 10px; /* Space below the input */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Dropdown content */
+.dropdown-content {
+    position: absolute; /* Absolute positioning */
+    width: calc(100% - 20px); /* Full width minus padding */
+    max-height: 200px; /* Maximum height */
+    overflow-y: auto; /* Scroll if content is too long */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* Background color */
+    display: none; /* Initially hidden */
+    margin-top: 5px; /* Space above dropdown */
+}
+
+/* List items in dropdown */
+.dropdown-content li {
+    padding: 10px; /* Padding inside the list item */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content li:hover {
+    background-color: #f1f1f1; /* Background color on hover */
+}

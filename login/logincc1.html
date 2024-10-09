@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login">
+    <div class="login-container" id="login-section">
+        <h2>Sign-in with mail or phone number</h2>
+        <div class="login-buttons">
+            <button id="gmail-btn">Gmail</button>
+            <button id="phone-btn">Phone Number</button>
+        </div>
+        <div class="gmail-form form">
+            <label for="mail">Gmail:</label>
+            <input type="email" id="mail" placeholder="Enter your Gmail"><br>
+            <button class="login-buttons">Submit</button><br>
+            <label for="gmail-otp">OTP:</label>
+            <input type="number" id="gmail-otp" placeholder="Enter OTP">
+        </div>
+        <div class="phone-form form" style="display:none;">
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" placeholder="Enter your Phone Number"><br>
+            <button class="login-buttons">Submit</button><br>
+            <label for="phone-otp">OTP:</label>
+            <input type="number" id="phone-otp" placeholder="Enter OTP">
+        </div>
+        <button class="login-buttons" id="sign-in-btn">Sign In</button> <!-- New sign-in button -->
+    </div>
+    <div class="box" id="page1" style="display: none;">
+        <form>
+            <h2>Details Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="enter your name">
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="enter your age">
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" placeholder="enter your date of birth">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="enter your email">
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" placeholder="enter your phone number">
+            <label for="traing">Training Experience:</label>
+            <input type="number" id="traing" placeholder="from x to y">
+        </form>
+        <button type="button" id="next1">Next ></button>
+    </div>
+    <div class="box" id="page2" style="display: none;">
+        <form>            
+            <label for="language">Familiar language to speak:</label>
+            <input type="text" id="language" placeholder="ex:telugu,english">
+            <label for="gym">Gym Certifications:</label>
+            <input type="file" id="gym" placeholder="provide Certificates">
+            <h4>Current Status:</h4>
+            <label for="exp">experienced trainer for X years</label>
+            <input type="number" id="exp" placeholder="enter your experience">
+            <label for="no-exp">No experience just started</label>
+            <input type="checkbox" id="no-exp">
+            <label for="ret">Retired Recently</label>
+            <input type="checkbox" id="ret">
+        </form>
+        <button type="button" id="back1">< back</button>
+        <button type="button" id="next2">Finish</button>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
